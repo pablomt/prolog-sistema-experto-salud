@@ -1,5 +1,8 @@
+
+
 :- use_module(library(pce)).
 :- use_module(library(pce_style_item)).
+
 main:-
 	new(Menu, dialog('Sistema experto de hospital', size(500,500))),
 	new(L, label(nombre, 'Bienvenidos a su diagnostico')),
@@ -76,12 +79,12 @@ parkinson :-
 
 %desconocido :- se_desconoce_enfermedad.
 
-tiene_colesterol:- pregunta("¿Tiene adormecimiento en alguna extremidad?"),!.
-tiene_diabetes:- pregunta("Padece de orina frecuente?"),!.
-tiene_ebola:- pregunta('¿Tiene fiebre?'),!.
-tiene_gastritits:-pregunta('Tiene dolor abdominal?'),!.
-tiene_neumonia:- pregunta('¿Ha tenido tos constate los ultimos dos dias?'),!.
-tiene_parkinson:- pregunta('¿Presenta temblor en alguna de las extremidades superiores del cuerpo?'),!.
+tiene_colesterol:- pregunta("¿Tiene adormecimiento en alguna extremidad?").
+tiene_diabetes:- pregunta("Padece de orina frecuente?").
+tiene_ebola:- pregunta('¿Tiene fiebre?').
+tiene_gastritits:-pregunta('Tiene dolor abdominal?').
+tiene_neumonia:- pregunta('¿Ha tenido tos constate los ultimos dos dias?').
+tiene_parkinson:- pregunta('¿Presenta temblor en alguna de las extremidades superiores del cuerpo?').
 
 :-dynamic si/1,no/1.
 

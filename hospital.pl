@@ -30,21 +30,21 @@ enfermedades('No estoy entrenado para darte ese diagnostico').
 colesterol :-
 	tiene_colesterol,
 	pregunta('¿Tiene hinchazon en alguna extremidad?'),
-	pregunta('Tiene perdida del equilibrio?'),
-	pregunta('Tiene dolor de cabeza?'),
-	pregunta('Tiene amarillos los ojos?'),
-	pregunta("¿Tiene adormecimiento en alguna extremidad?"),
-	pregunta('Tiene agitacion,en especial al caminar o al realizar actividades leve?'),
-	pregunta('Tiene dolor en el pecho?').
+	pregunta('¿Tiene perdida del equilibrio?'),
+	pregunta('¿Tiene dolor de cabeza?'),
+	pregunta('¿Tiene amarillos los ojos?'),
+	pregunta('¿Tiene adormecimiento en alguna extremidad?'),
+	pregunta('¿Tiene agitacion,en especial al caminar o al realizar actividades leve?'),
+	pregunta('¿Tiene dolor en el pecho?').
 
 diabetes :-
 	tiene_diabetes,
-	pregunta("Padece de orina frecuente?"),
-	pregunta('Tiene sed constante?'),
-	pregunta('Tiene hambre excesiva?'),
-	pregunta('Tiene perdida de peso inexplicable?'),
-	pregunta('Se siente fatigado?'),
-	pregunta('Tiene irritabilidad?').
+	pregunta('¿Padece de orina frecuente?'),
+	pregunta('¿Tiene sed constante?'),
+	pregunta('¿Tiene hambre excesiva?'),
+	pregunta('¿Tiene perdida de peso inexplicable?'),
+	pregunta('¿Se siente fatigado?'),
+	pregunta('¿Tiene irritabilidad?').
 
 ebola :-
 	tiene_ebola,
@@ -73,8 +73,8 @@ parkinson :-
 	pregunta('¿Tiene dolores articulares?'),
 	pregunta('¿Ha notado algún cambio perdida de movimiento espontáneo y automático en alguna extremidad?'),
 	pregunta('¿Ha presentado rigidez severa en alguna region muscular?'),
-	pregunta('Sufre de depresión o ha utilizado farmacos para tratar una enfermedad semejante?'),
-	pregunta('Presenta algun trastorno en el sueño?').
+	pregunta('¿Sufre de depresión o ha utilizado farmacos para tratar una enfermedad semejante?'),
+	pregunta('¿Presenta algun trastorno en el sueño?').
 
 
 %desconocido :- se_desconoce_enfermedad.

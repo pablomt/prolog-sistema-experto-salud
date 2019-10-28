@@ -10,7 +10,7 @@ main:-
 	new(@respl, label(nombre, '')),
 	new(Salir, button('Salir', and(message(Menu,destroy), message(Menu, free)))),
 	new(@boton, button('Realizar test', message(@prolog, botones))),
-	send(Menu, append(L)), new(@btncarrera, button('¿Diagnotico?')),
+	send(Menu, append(L)), new(@btncarrera, button('¿Diagnostico?')),
 	send(Menu,display,L,point(100,20)),
 	send(Menu,display,@boton,point(130,150)),
 	send(Menu,display,@texto,point(50,100)),
@@ -79,10 +79,10 @@ parkinson :-
 
 %desconocido :- se_desconoce_enfermedad.
 
-tiene_colesterol:-	pregunta('Tiene vision borrosa?').
-tiene_diabetes:-	pregunta('Tiene vision borrosa?').
+tiene_colesterol:-	pregunta('¿Tiene vision borrosa?').
+tiene_diabetes:-	pregunta('¿Tiene vision borrosa?').
 tiene_ebola:-		pregunta('¿Tiene fiebre?').
-tiene_gastritits:-	pregunta('Tiene dolor abdominal?').
+tiene_gastritits:-	pregunta('¿Tiene dolor abdominal?').
 tiene_neumonia:-	pregunta('¿Tiene fiebre?').
 tiene_parkinson:-	pregunta('¿Presenta temblor en alguna de las extremidades superiores del cuerpo?').
 
@@ -131,7 +131,7 @@ lim:- send(@respl, selection('')).
 limpiar2:-
 	send(@texto,free),
 	send(@respl,free),
-	%send(@btncarrera,free),
+*	%send(@btncarrera,free),
 	send(@boton,free).
 
 
